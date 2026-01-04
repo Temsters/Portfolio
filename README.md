@@ -1,8 +1,7 @@
 # Temi Bankole – Software Development Portfolio
-Software Development student focused on building real-world web, mobile, and data-driven applications and with an interest in product-driven and analytics-heavy systems.
+Software Development student who builds practical web, mobile, and data-driven applications, with a strong interest in product-focused and analytics-driven systems.
 
-
-📍 Calgary, AB | 📧 temibankole5@gmail.com | [LinkedIn](https://linkedin.com/in/temi-bankole) | [GitHub](https://github.com/temibankole)
+📍 Calgary, AB | 📧 temibankole5@gmail.com | [LinkedIn](linkedin.com/in/temi-bankole) | [GitHub](https://github.com/Temsters)
 
 ---
 
