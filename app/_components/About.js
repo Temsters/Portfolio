@@ -1,5 +1,7 @@
 "use client";
 
+import { MapPin, Handshake, Trophy, DatabaseZap } from "lucide-react";
+
 export default function About() {
 
   //Education stored as an array of objects with degree, school, and year properties.
@@ -31,14 +33,30 @@ export default function About() {
 
           {/* Left - Bio */}
           <div className="flex-1 max-h-full rounded-xl border border-white/10 bg-[linear-gradient(135deg,_rgba(127,231,227,0.25)_0%,_rgba(41,182,209,0.25)_100%)] p-4 shadow-[0_10px_30px_rgba(2,8,18,0.2)]">
-            <p>I&apos;m a software development student and varsity athlete who believes that discipline off the court builds discipline in code. 
+            <p className="mb-2 bg-[[#0A1F3A]] ">Hi, I&apos;m Temi :)</p>
+            <p>A software development student and varsity athlete who believes that discipline on the court translates to discipline in code. 
               I work across full-stack development, using technology to solve real-world business solutions. 
               I led a team through a smart building analytics platform learning that good software, like good volleyball, requires a great team effort which I truly value.
             </p>
+
+            {/*Quick Stats Row*/}
+          <div className="flex flex-wrap center gap-3 mt-4 pt-4 border-t border-white/20">
+              <span className="inline-flex items-center gap-1 mt-2 text-md bg-[rgba(127,231,227,0.2)] text-[var(--surface)] border border-[var(--surface)]/40 rounded-full px-2 py-0.5 align-middle">
+                <MapPin size={13} /> Calgary, AB
+              </span>
+              <span className="inline-flex items-center gap-1 mt-2 text-md bg-[rgba(127,231,227,0.2)] text-[var(--surface)] border border-[var(--surface)]/40 rounded-full px-2 py-0.5 align-middle"> 
+                🏐 Varsity Athlete</span>
+              <span className="inline-flex items-center gap-1 mt-2 text-md bg-[rgba(127,231,227,0.2)] text-[var(--surface)] border border-[var(--surface)]/40 rounded-full px-2 py-0.5 align-middle"> 
+              <Handshake size={13} /> Team-Oriented
+              </span>
+              <span className="inline-flex items-center gap-1 mt-2 text-md bg-[rgba(127,231,227,0.2)] text-[var(--surface)] border border-[var(--surface)]/40 rounded-full px-2 py-0.5 align-middle">
+                <DatabaseZap size={13} /> Data-Driven
+              </span>
           </div>
+        </div>
 
           {/* Right - Education */}
-          <div className="flex-1 rounded-xl border border-[var(--surface)]/40 bg-[#020812]/80 p-4 flex flex-col gap-4 shadow-[0_10px_30px_rgba(2,8,18,0.25)]">
+          <div className="flex-1 rounded-xl outline-3 outline-double outline-blue-500 bg-[#020812]/80 p-4 flex flex-col gap-4 shadow-[0_10px_30px_rgba(2,8,18,0.25)]">
             <p className="text-lg font-semibold text-white">Education</p>
             {education.map((edu, i) => (
               <div key={i} className="rounded-md border border-blue-500/40 bg-[#0A1F3A] p-4">
@@ -49,8 +67,8 @@ export default function About() {
                   {edu.gpa && <p className="text-white/50 text-xs">{edu.gpa}</p>}
                 </div>
                 {edu.badge && (
-                  <span className="inline-block mt-2 text-xs bg-[rgba(127,231,227,0.2)] text-[var(--surface)] border border-[var(--surface)]/40 rounded-full px-2 py-0.5">
-                    🏆 {edu.badge}
+                  <span className="inline-flex items-center gap-1 mt-2 text-xs bg-[rgba(127,231,227,0.2)] text-[var(--surface)] border border-[var(--surface)]/40 rounded-full px-2 py-0.5 align-middle">
+                    <Trophy size={13} /> {edu.badge}
                   </span>
                 )}
               </div>
