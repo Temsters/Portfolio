@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020812;
+  --foreground: #f8fbff;
+  --surface: #7FE7E3;
+  --turquoise: #29B6D1;
+  --ocean: #087CBF;
+  --deep-blue: #07519A;
+  --navy: #102F6B;
+  --midnight: #071A3D;
+  --deep-ocean: #020812;
 }
 
 html {
@@ -18,7 +25,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--turquoise) 20%, var(--ocean) 45%, var(--deep-blue) 65%, var(--navy) 80%, var(--deep-ocean) 100%);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
