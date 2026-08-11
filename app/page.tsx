@@ -2,7 +2,6 @@
 
 import Navbar from "./_components/Navbar";
 import About from "./_components/About";
-import Experience from "./_components/Experience";
 import Skills from "./_components/Skills";
 import Projects from "./_components/Projects";
 import Contact from "./_components/Contact";
@@ -14,8 +13,8 @@ export default function Home() {
 
       <main id="home" className="flex min-h-screen w-full flex-1 items-center justify-center bg-linear-to-t from-[#020B18] via-[#0A2540] to-[#0E3D6E] px-6 py-16 text-white sm:px-10 md:px-14 lg:px-16 lg:py-24">
         <div className="flex w-full max-w-2xl flex-col items-center justify-center gap-6 text-center">
-          <h1 className="max-w-xs text-4xl font-semibold leading-10 tracking-tight text-white">
-            Temi Bankole
+          <h1 className="max-w-xs text-4xl font-semibold leading-9 tracking-tight text-white">
+            Hello, I&apos;m Temi Bankole
           </h1>
           <p className="max-w-xs text-lg leading-7 text-white/80">
             A software development student, varsity athlete, and builder creating solutions that make aspositive impact. Always chasing the next challenge.</p>
@@ -36,7 +35,6 @@ export default function Home() {
         </div>
       </main>
       <About />
-      <Experience />
       <Skills />
       <Projects />
       <Contact />
