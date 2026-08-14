@@ -33,7 +33,7 @@ export default function About() {
 
           {/* Left - Bio */}
           <div className="flex-1 max-h-full rounded-xl border border-white/10 bg-[linear-gradient(135deg,_rgba(127,231,227,0.25)_0%,_rgba(41,182,209,0.25)_100%)] p-4 shadow-[0_10px_30px_rgba(2,8,18,0.2)]">
-            <p className="mb-2 bg-[[#0A1F3A]] ">Hi, I&apos;m Temi :)</p>
+            <p className="mb-2 text-white">Hi, I&apos;m Temi :)</p>
             <p>A software development student and varsity athlete who believes that discipline on the court translates to discipline in code. 
               I work across full-stack development, using technology to solve real-world business solutions. 
               I led a team through a smart building analytics platform learning that good software, like good volleyball, requires a great team effort which I truly value.
@@ -56,7 +56,7 @@ export default function About() {
         </div>
 
           {/* Right - Education */}
-          <div className="flex-1 rounded-xl outline-3 outline-double outline-blue-500 bg-[#020812]/80 p-4 flex flex-col gap-4 shadow-[0_10px_30px_rgba(2,8,18,0.25)]">
+          <div className="flex-1 rounded-xl outline-3 outline-double outline-blue-500 bg-[#020812] p-4 flex flex-col gap-4 shadow-[0_10px_30px_rgba(2,8,18,0.25)]">
             <p className="text-lg font-semibold text-white">Education</p>
             {education.map((edu, i) => (
               <div key={i} className="rounded-md border border-blue-500/40 bg-[#0A1F3A] p-4">
