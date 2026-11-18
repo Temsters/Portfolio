@@ -57,9 +57,9 @@ export default function About() {
 
           {/* Right - Education */}
           <div className="flex-1 rounded-xl outline-3 outline-double outline-blue-500 bg-[#020812] p-4 flex flex-col gap-4 shadow-[0_10px_30px_rgba(2,8,18,0.25)]">
-            <p className="text-lg font-semibold text-white">Education</p>
+            <p className="text-2xl font-semibold text-white">Education</p>
             {education.map((edu, i) => (
-              <div key={i} className="rounded-md border border-blue-500/40 bg-[#0A1F3A] p-4">
+              <div key={i} className="rounded-md border border-blue-500/40 bg-[#0A1F3A] p-4 duration-200 hover:scale-105">
                 <p className="font-bold text-white text-sm leading-snug">{edu.degree}</p>
                 <p className="text-[var(--surface)] text-sm mt-1">{edu.school}</p>
                 <div className="flex items-center justify-between mt-2">
